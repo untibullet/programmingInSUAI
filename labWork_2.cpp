@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -49,7 +50,7 @@ void task3(){
     
     scanf("%ld", &number);
     
-    int output;
+    int output = 0;
     int n = 0;
     int remain;
     while (number > 0){
