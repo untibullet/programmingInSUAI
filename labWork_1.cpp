@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <string>
+#include <math.h>
 
 using namespace std;
 
@@ -29,20 +30,6 @@ int count(int number){
     return n;
 }
 
-int myrank(int number, int rank){
-    if (rank == 0){
-        return 1;
-    }
-    
-    int output = number;
-    
-    for (rank; rank > 1; rank--){
-        output *= number;
-    }
-    
-    return output;
-}
-
 void task2(){
     int number;
     
@@ -53,9 +40,9 @@ void task2(){
     
     int integer;
     for (n; n > 0; n--){
-        integer = number / myrank(10, n - 1);
+        integer = number / (int) pow(10, n - 1);
         printf("%d ", integer);
-        number = number % myrank(10, n - 1);
+        number = number % (int) pow(10, n - 1);
     }
 }
 
