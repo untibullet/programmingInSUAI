@@ -21,7 +21,9 @@ int main()
     multiplier3 = pow(C + D, 2);
 
     float output = multiplier1 * multiplier2 * multiplier3;
+    
+    cout << "using cout: " << output << endl;
 
-    cout << output;
+    printf("using printf: %f\n", output);
 
 }
