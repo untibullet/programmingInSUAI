@@ -25,5 +25,7 @@ int main()
     cout << "using cout: " << output << endl;
 
     printf("using printf: %f\n", output);
+    
+    return 0;
 
 }
