@@ -40,4 +40,6 @@ int main()
         printf("%d %s", number, "копейки");
         break;
     }
+    
+    return 0;
 }
