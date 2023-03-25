@@ -23,4 +23,6 @@ int main()
 	}
 
 	cout << output << endl;
+	
+	return 0;
 }
